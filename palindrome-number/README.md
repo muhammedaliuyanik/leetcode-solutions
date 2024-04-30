@@ -20,4 +20,4 @@
         Therefore, the time complexity is O(n) where n is the number of digits in the input number. 
 
 
-![leetcode Solution Runtime & Memory](https://prnt.sc/3gKFwSx7GOrV)
+![](images/submit.png)
