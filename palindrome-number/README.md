@@ -20,4 +20,4 @@
         Therefore, the time complexity is O(n) where n is the number of digits in the input number. 
 
 
-![](images/submit.png)
+![](submit.png)
