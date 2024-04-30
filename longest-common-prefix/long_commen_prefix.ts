@@ -1,6 +1,4 @@
 function longestCommonPrefix(strs: string[]): string {
-    // dizi göndercek dizi içindeki kelimelerin ilk harfleri ayný olanlarý bul.
-    //kelime kelime baksýn
     let counter = 0,temp="ab",temp2="abc";
     let pushCounter:number[] = []
     if(strs.length==1)
@@ -11,8 +9,8 @@ function longestCommonPrefix(strs: string[]): string {
         temp2 = strs[i+1];
         for(let j=0; j<temp2.length; j++)
         {
-            if(temp[j]==temp2[j]){ //i ye karþýlaþtýrýðý elemanýn karakter sayýsýndan eþit ya da küçük þartý koy
-            counter++;// her saydýðýný üzerine ekliyo
+            if(temp[j]==temp2[j]){ //i ye karÅŸÄ±laÅŸtÄ±rÄ±ÄŸÄ± elemanÄ±n karakter sayÄ±sÄ±ndan eÅŸit ya da kÃ¼Ã§Ã¼k ÅŸartÄ± koy
+            counter++; // her saydÄ±ÄŸÄ±nÄ± Ã¼zerine ekliyo
             }
             else if(counter!=0)
             break;
@@ -22,11 +20,12 @@ function longestCommonPrefix(strs: string[]): string {
         pushCounter.push(counter);
         counter = 0;
     }
-    let minNumber = pushCounter[0]; // En küçük sayýyý ilk eleman olarak baþlatýn
+    let minNumber = pushCounter[0]; // En kÃ¼Ã§Ã¼k sayÄ±yÄ± ilk eleman olarak baÅŸlatÄ±n
+
 
     for (let i = 1; i < pushCounter.length; i++) {
-        if (pushCounter[i] < minNumber) { // Dizideki her elemaný kontrol edin
-            minNumber = pushCounter[i]; // Eðer bir eleman en küçükse, minNumber deðiþkenini güncelleyin
+        if (pushCounter[i] < minNumber) { // Dizideki her elemanÄ± kontrol edin
+            minNumber = pushCounter[i]; // EÄŸer bir eleman en kÃ¼Ã§Ã¼kse, minNumber deÄŸiÅŸkenini gÃ¼ncelleyin
         }
     }
     let finalValue = strs[0];
