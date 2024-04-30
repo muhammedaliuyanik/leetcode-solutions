@@ -1,6 +1,6 @@
 # Intuition
 
-- Dizi gönderilecek ve dizideki kelimelerin ilk harfleri ayný olanlarý bulacak.
+- Dizi gï¿½nderilecek ve dizideki kelimelerin ilk harfleri aynï¿½ olanlarï¿½ bulacak.
 - Kelime kelime kontrol edilecek.
 
 # Complexity

@@ -12,9 +12,9 @@ function isPalindrome(x: number): boolean {
     let numberAsString: string = x.toString(); 
     let numberState = x % 2;
 
-    if(numberState == 0) //sayý çift karakterliyse
+    if(numberState == 0) //sayï¿½ ï¿½ift karakterliyse
         loopSize = numberAsString.length/2;
-    else{ //sayý tek karakterliyse
+    else{ //sayï¿½ tek karakterliyse
         let temp = numberAsString.length+1;
         loopSize=(temp/2);
     }
@@ -23,7 +23,7 @@ function isPalindrome(x: number): boolean {
     for(let i =0; i<loopSize; i++){
         {
             if(numberAsString[i] != numberAsString[lastItem]){
-                console.log("palindrome deðil!")
+                console.log("palindrome deï¿½il!")
                 return false;
             }
             if(lastItem==i)
